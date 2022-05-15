@@ -8,7 +8,7 @@ function btnEncriptar() {
 }
 
 function encriptar(stringEncriptada) {
-    let  matrizCodigo = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]]
+    let  matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
     stringEncriptada = stringEncriptada.toLowerCase()
 
     for(let i=0; i < matrizCodigo.length; i++) {
@@ -20,4 +20,22 @@ function encriptar(stringEncriptada) {
     
 }
 
-//criar funcao descriptgrafar
+function btnDesencriptar() {
+    const textoDesencriptado = desencriptar(inputText.value)
+    mensage.value = textoDesencriptado
+    
+ 
+}
+
+function desencriptar(stringDescriptada) {
+    let  matrizCodigo = [["ai", "a"], ["enter", "e"], ["imes", "i"], ["ober", "o"], ["ufat", "u"]]
+    stringDescriptada = stringDescriptada
+
+    for(let i=0; i < matrizCodigo.length; i++) {
+        if(stringDescriptada.includes(matrizCodigo[i][0])) {
+            stringDescriptada = stringDescriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
+        }
+    }
+    return stringDescriptada
+
+}

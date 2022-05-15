@@ -3,15 +3,28 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    box-sizing: border-box;
+ 
+   
 }
 
 header {
-   margin-left: 2%;
-   margin-top: 2%; 
+ position: fixed;
+ background-color: white;
+ width: 100%;
+ margin: 0 auto;
+ margin-left: 0%;
+  
+}
+
+.header img {
+    width: 90px;
+    height: 90px;
+    background-color: white;
 }
 
 body {
-    background-color:rgb(187, 225, 242);
+    background-color:rgb(8, 67, 95);
     
 }
 
@@ -22,10 +35,11 @@ main {
 }
 
 .input-text {
-    margin-top: 90px;
-    background-color:rgb(187, 225, 242);
+    margin-top: 180px;
+    margin-left: 30px;
+    background-color:rgb(8, 67, 95);
     border-color: transparent;
-    color: rgb(2, 48, 71);
+    color: white;
 }
 
 textarea:focus, input:focus, select:focus {
@@ -34,17 +48,17 @@ textarea:focus, input:focus, select:focus {
 
 .mensage  {
     position: relative;
-    margin-top: 40px;
-    margin-left: 90px;
+    margin-top: 180px;
+    margin-left: 60px;
     margin-right: 90px;
     background-image: url(/img/undraw_File_searching_re_3evy.png);
     background-position: center;
     background-size: 350px;
     background-position-y: 150px;
     background-repeat: no-repeat;
-    width: 400px;
-    height:800px;
-    padding: 15px;
+    width: 350px;
+    height:600px;
+    padding: 20px;
     border-radius: 30px;
     text-align:left;
     border-color: transparent;
@@ -55,10 +69,12 @@ textarea:focus, input:focus, select:focus {
     display: flex; 
     flex-direction: row;
     margin-top: 20px; 
+    margin-bottom: 0%;
 }
 
- p {
+.button p {
    font-size:16px;
+
 }
 
 .encriptor {
@@ -66,8 +82,9 @@ textarea:focus, input:focus, select:focus {
     color: white;
     width: 332px;
     border-radius: 24px;
-    border-color: transparent;
-    
+    border-color: white;
+  
+    margin-left: 30px;
        
 }
 
@@ -77,7 +94,9 @@ textarea:focus, input:focus, select:focus {
     color: rgb(251, 133, 0);
     border-radius: 24px;
     width: 332px;
-    border-color: transparent;
+    border-color: white;
+  
+    margin-left: 30px;
 }
 
 
@@ -89,12 +108,10 @@ textarea:focus, input:focus, select:focus {
 
  
 .text {
-  
+
     font-size: 15px;
     color: rgb(2, 48, 71);
     font-weight: 800;
-
-
-
-    
+    margin-left: 30px;
+     
 }

@@ -11,8 +11,8 @@
 </head>
 <body>
 
-    <header>
-        <img src="/img/logo_alura.png" alt="Logo Alura">
+    <header class ="header">
+        <img src="/img/Logo Amara (2).png" alt="Logo Alura">
     </header>
     <main>
         <section>
@@ -27,7 +27,7 @@
                     <p>Criptografar</p>
                 </button>
     
-                <button class="descriptor">
+                <button class="descriptor" onclick="btnDesencriptar()">
                    <p>Desencriptar</p>
                 </button>
 
@@ -37,7 +37,15 @@
 
         <section>
             <textarea class="mensage" clos="18" rows="8"></textarea>
+            <div>
+            <h5>Nenhuma mensagem encontrada </h5>
+            <p> Digite o texto que você deseja criptografar ou descriptografar</p>
+            </div> 
         </section>
+
+        <footer class = "author">
+            <p> </p>
+        </footer>
     </main>
     <script src="script.js"></script>
 </body>
