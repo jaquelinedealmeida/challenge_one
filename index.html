@@ -9,44 +9,53 @@
     <link rel="stylesheet" href="style.css">
     <title>Decodificador</title>
 </head>
+
 <body>
 
-    <header class ="header">
+    <header class="nav">
         <img src="/img/Logo Amara (2).png" alt="Logo Alura">
     </header>
     <main>
         <section>
-            <textarea class = "input-text" cols="40" rows="6" placeholder="digite o seu texto"></textarea>
+            <textarea class="input-text" cols="40" rows="6" placeholder="digite o seu texto"></textarea>
 
-            <div class ="information">
-               
-                <h6 class = "text" >❗Apenas letras maiúsculas e minúsculas</h6>   
+            <div class="information">
+
+                <h6 class="text">❗Apenas letras maiúsculas e minúsculas</h6>
             </div>
             <div class="button">
-                <button class = "encriptor" onclick="btnEncriptar()">
+                <button class="encriptor" onclick="btnEncriptar()">
                     <p>Criptografar</p>
                 </button>
-    
+
                 <button class="descriptor" onclick="btnDesencriptar()">
-                   <p>Desencriptar</p>
+                    <p>Desencriptar</p>
                 </button>
 
-                 <!--inserido pelo atalho .botoes-->
+                <!--inserido pelo atalho .botoes-->
             </div>
         </section>
 
-        <section>
-            <textarea class="mensage" clos="18" rows="8"></textarea>
+        <section class="output">
             <div>
-            <h5>Nenhuma mensagem encontrada </h5>
-            <p> Digite o texto que você deseja criptografar ou descriptografar</p>
-            </div> 
-        </section>
+               
+                <textarea class="mensage" cols="18" rows="8">
+                   Escreva o texto que deseja criptografar ou descriptografar</textarea>
 
-        <footer class = "author">
-            <p> </p>
-        </footer>
+            </div>
+
+            <div>
+                <button id="copy" type="button" onclick="copy()" >Copiar</button>
+            </div>
+            
+        </section>
     </main>
+
+    <footer class="author">
+        <p>© Criado por Jaqueline de Almeida | 2022</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>

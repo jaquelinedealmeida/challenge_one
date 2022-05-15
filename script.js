@@ -5,6 +5,8 @@ function btnEncriptar() {
     const textoEncriptado =  encriptar(inputText.value)
     mensage.value = textoEncriptado
     mensage.style.backgroundImage = "none"
+
+    alert("Não esqueça de digitar seu texto!")
 }
 
 function encriptar(stringEncriptada) {
@@ -15,15 +17,15 @@ function encriptar(stringEncriptada) {
         if(stringEncriptada.includes(matrizCodigo[i][0])) {
             stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
         }
+
+      
     }
-    return stringEncriptada
-    
+    return stringEncriptada   
 }
 
 function btnDesencriptar() {
     const textoDesencriptado = desencriptar(inputText.value)
     mensage.value = textoDesencriptado
-    
  
 }
 
@@ -39,3 +41,4 @@ function desencriptar(stringDescriptada) {
     return stringDescriptada
 
 }
+
