@@ -1,15 +1,15 @@
-const  inputText = document.querySelector(".input-text");
-const mensagem = document.querySelector("mensage");
+const inputText = document.querySelector(".input-text");
+const mensage = document.querySelector(".mensage");
 
-function btnEncriptor() {
-    const textoEncriptado =  encriptar(inputTexto.value)
-    mensagem.value = textoEncriptado
-    mensagem.style.backgroundImage = "none"
+function btnEncriptar() {
+    const textoEncriptado =  encriptar(inputText.value)
+    mensage.value = textoEncriptado
+    mensage.style.backgroundImage = "none"
 }
 
 function encriptar(stringEncriptada) {
-    let  matrizCodigo = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"]]
-    stringEncriptada = stringEncriptada.toLowerCase();
+    let  matrizCodigo = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]]
+    stringEncriptada = stringEncriptada.toLowerCase()
 
     for(let i=0; i < matrizCodigo.length; i++) {
         if(stringEncriptada.includes(matrizCodigo[i][0])) {

@@ -1,49 +1,100 @@
 * {
-    font-family: "Inter",sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+}
 
+header {
+   margin-left: 2%;
+   margin-top: 2%; 
 }
 
 body {
-
+    background-color:rgb(187, 225, 242);
+    
 }
 
-.main {
+main {
     display: flex;
-    margin-left: 80px ;
-    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-bottom: 50px; 
 }
 
-.input-texto {
-    margin-top: 90px
+.input-text {
+    margin-top: 90px;
+    background-color:rgb(187, 225, 242);
+    border-color: transparent;
+    color: rgb(2, 48, 71);
 }
 
-.mensagem  {
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+
+.mensage  {
     position: relative;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 90px;
-    background-image: url;
+    margin-right: 90px;
+    background-image: url(/img/undraw_File_searching_re_3evy.png);
+    background-position: center;
+    background-size: 350px;
+    background-position-y: 150px;
     background-repeat: no-repeat;
+    width: 400px;
+    height:800px;
+    padding: 15px;
+    border-radius: 30px;
+    text-align:left;
+    border-color: transparent;
+
 }
 
-.botton {
+.button {
     display: flex; 
     flex-direction: row;
     margin-top: 20px; 
 }
 
+ p {
+   font-size:16px;
+}
+
 .encriptor {
-    background-color: darkblue;
-    color: white
+    background-color: #fb8500;
+    color: white;
+    width: 332px;
+    border-radius: 24px;
+    border-color: transparent;
+    
+       
 }
 
 .descriptor {
     margin-left: 30px;
-
+    background-color: rgb(248, 241, 241);
+    color: rgb(251, 133, 0);
+    border-radius: 24px;
+    width: 332px;
+    border-color: transparent;
 }
 
+
+
 .information {
+   display: flex;
+
+  }
+
+ 
+.text {
+  
     font-size: 15px;
+    color: rgb(2, 48, 71);
+    font-weight: 800;
+
+
+
+    
 }
