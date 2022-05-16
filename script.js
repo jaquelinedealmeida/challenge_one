@@ -1,13 +1,40 @@
 const inputText = document.querySelector(".input-text");
 const mensage = document.querySelector(".mensage");
 
+
+
 function btnEncriptar() {
     const textoEncriptado =  encriptar(inputText.value)
     mensage.value = textoEncriptado
     mensage.style.backgroundImage = "none"
 
-    alert("Não esqueça de digitar seu texto!")
+    if(textoEncriptado == false){
+        alert("Você precisa digitar o texto antes.")
+    }      
+}  
+
+function btnCopy() {
+    let textCopy = mensage;
+    textCopy.select();
+    alert("Texto copiado para a área de transferência!!")
+    //selectText.setSelectionRange(0, 99999); usado para seleção nos dispotivos móveis
+     
 }
+
+function btnClear() {
+   let clearText = document.querySelector(".mensage");
+   clearText.select();
+    inputText.value = "";
+    document.querySelector(".mensage").style.display = "block";
+    inputText.value="";
+    inputText.focus();
+    mensage.style.backgroundImage = "";
+    document.querySelector('.mensage').value = "";
+
+ }
+       
+
+   
 
 function encriptar(stringEncriptada) {
     let  matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
@@ -26,6 +53,10 @@ function encriptar(stringEncriptada) {
 function btnDesencriptar() {
     const textoDesencriptado = desencriptar(inputText.value)
     mensage.value = textoDesencriptado
+
+    if(textoDesencriptado == false){
+        alert("Você precisa digitar o texto antes.")
+    }    
  
 }
 
@@ -41,4 +72,7 @@ function desencriptar(stringDescriptada) {
     return stringDescriptada
 
 }
+
+
+
 

@@ -13,11 +13,11 @@
 <body>
 
     <header class="nav">
-        <img src="/img/Logo Amara (2).png" alt="Logo Alura">
+        <img src="/img/Logo Amara (2).png" alt="Logo Amara Comunicação e Tecnologia">
     </header>
     <main>
         <section>
-            <textarea class="input-text" cols="40" rows="6" placeholder="digite o seu texto"></textarea>
+            <textarea class="input-text" id="entrada" cols="40" rows="6" placeholder="digite o seu texto"></textarea>
 
             <div class="information">
 
@@ -38,20 +38,25 @@
 
         <section class="output">
             <div>
-               
-                <textarea class="mensage" cols="18" rows="8">
-                   Escreva o texto que deseja criptografar ou descriptografar</textarea>
-
+                <textarea class="mensage" id="msgoutput" cols="18" rows="8"
+                    placeholder="       Nenhuma mensagem encontrada.       Digite um texto que você quer criptografar ou descriptogafar"></textarea>
             </div>
 
-            <div>
-                <button id="copy" type="button" onclick="copy()" >Copiar</button>
-            </div>
-            
+            <section class="btnCopyClear">
+
+                <button class="copyText" onclick="btnCopy()">Copiar</button>
+
+                <button class="clearText" onclick="btnClear()">
+                    Limpar
+                </button>
+            </section>
+
         </section>
     </main>
 
     <footer class="author">
+        <img src="/img/icons8-linkedin-circundado-100.png" alt="icone linkedin">
+        <img src="/img/icons8-github-100.png" alt="icone github">
         <p>© Criado por Jaqueline de Almeida | 2022</p>
     </footer>
 
