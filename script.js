@@ -78,4 +78,8 @@ function btnClear() {
   inputText.focus();
   mensage.style.backgroundImage = "";
   document.querySelector(".mensage").value = "";
+
+  if (clearText == false) {
+    alert("Opa! Você ainda não escreveu nenhuma mensagem");
+  }
 }
